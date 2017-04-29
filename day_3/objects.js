@@ -81,7 +81,14 @@ var newCarProperty = "spoiler";
 car[ newCarProperty ] = true;
 // car.spoiler = true;
 
+// for in allows us to interation through the properties of an object
+for (let property in object) {
+  console.log(property);
+}
 
-
+for(let property in car) {
+  console.log(`property: ${property}`);
+  console.log(`car[property]: ${car[property]}`);
+}
 
 //
