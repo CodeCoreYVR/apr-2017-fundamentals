@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Box Model</title>
+    <style>
+      .box {
+        border: thick maroon solid;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        padding: 20px; /* space inside the box */
+        margin: 50px; /* space outside the box */
+        /*overflow: hidden;*/
+        /*overflow: scroll;*/
+      }
+      .inner-box {
+        border: thick teal dotted;
+      }
+      .inner-inner-box {
+        border: thin brown dashed;
+        width: 50%;
+        color: rgba(0,0,255,0.5);
+        background-color: rgba(255,0,0,0.5);
+        /*border-width: medium;
+        border-color: beige;
+        border-style: dashed;*/
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box" style="background-color: pink">Cat
+      <div class="inner-box" style="padding: 5px; width: 70%">Kitten</div>
+
+      <div class="inner-box">Kitten</div>
+      <div class="inner-box" style="display:inline;">Kitten
+        <div class="inner-inner-box" style="display:inline">Toy</div>
+      </div>
+    </div>
+  </body>
+</html>

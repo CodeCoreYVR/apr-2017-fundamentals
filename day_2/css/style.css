@@ -3,3 +3,10 @@ a {
   text-decoration: none;
   font-family: cursive;
 }
+
+h1 {
+  color: pink;
+  background-color: grey;
+  font-size: 50px;
+  font-weight: bold;
+}

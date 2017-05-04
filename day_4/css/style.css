@@ -1,0 +1,83 @@
+a {
+  color: beige;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: brown;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+a:hover {
+  font-weight: bold;
+  background-color: beige;
+  color: brown;
+}
+
+.special li {}
+ul.special li {}
+ul.special > li {}
+
+h1#organs.highlight {}
+h1.highlight#organs {}
+
+li {
+  font-family: fantasy;
+  color: grey;
+}
+
+/* will style all li inside our ul
+  no matter how many levels deep,
+  and descedant, does not have to be
+  direct descendant. */
+ul li {
+  font-family: cursive;
+  color: orange;
+}
+
+/* will only style li's that are
+   direct descendands of our ul */
+ul > li {
+  font-family: monospace;
+  color: turquoise;
+}
+
+/* how do i target the paragraph tags??? */
+/* and paragraph tag contain with a tag that has a class of special */
+div.special > p {
+  color: orange;
+  background-color: blue;
+}
+
+/* id's are usually meant to be unique */
+h1#bones {
+  color: white;
+  font-family: cursive;
+  font-size: 50px;
+}
+
+h1#organs {
+  border-radius: 20px;
+  color: maroon;
+}
+
+/* highlight class - meant to be reused, and not for one individual element */
+span.highlight {
+  background-color: yellow;
+  color: black !important;
+  font-weight: bold;
+}
+
+body {
+  background-color: firebrick;
+  /* ../ goes up a directory - relative pathing */
+  background-image: url(../images/body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  /* value between 0 and 1 */
+  opacity: 0.75;
+  color: teal;
+  font-family: Arial;
+}
