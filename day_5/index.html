@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lodash Demo</title>
+    <script src="lodash.js"></script>
+    <script>
+      let numbers = [1,2,3];
+      let results = _.concat(numbers, 42, 24601, [99,66,7], [[16]]);
+
+      document.write( results + "<br>");
+      console.log( results );
+
+      document.write( _.flatten( results ) + "<br>");
+
+      // use lodash to shuffle an array
+
+      // use lodash's forEach on an object, see how that differs from an array
+
+      // only get the unique values of an array
+      let names = ["Jacob", "John", "Jen", "Jacob"];
+      document.write( _.uniq(names) + "<br>");
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
