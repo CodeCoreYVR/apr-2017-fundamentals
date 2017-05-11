@@ -5,21 +5,43 @@
     <title>Lodash Demo</title>
     <script src="lodash.js"></script>
     <script>
-      let numbers = [1,2,3];
-      let results = _.concat(numbers, 42, 24601, [99,66,7], [[16]]);
+      function sayHello() {
 
-      document.write( results + "<br>");
-      console.log( results );
+      }
 
-      document.write( _.flatten( results ) + "<br>");
+      let sayHello = function() {
+        console.log("Hello!");
+      };
 
-      // use lodash to shuffle an array
+console.time("loop");
 
-      // use lodash's forEach on an object, see how that differs from an array
+for (let i=0; i<100000; i++){
+  console.log("sadf;lajdskfjlasdf");
+}
 
-      // only get the unique values of an array
-      let names = ["Jacob", "John", "Jen", "Jacob"];
-      document.write( _.uniq(names) + "<br>");
+console.timeEnd("loop");
+
+      function() {
+        console.log("Hello!");
+      }
+
+      setTimeout( sayHello, 1000 );
+
+      // let numbers = [1,2,3];
+      // let results = _.concat(numbers, 42, 24601, [99,66,7], [[16]]);
+      //
+      // document.write( results + "<br>");
+      // console.log( results );
+      //
+      // document.write( _.flatten( results ) + "<br>");
+      //
+      // // use lodash to shuffle an array
+      //
+      // // use lodash's forEach on an object, see how that differs from an array
+      //
+      // // only get the unique values of an array
+      // let names = ["Jacob", "John", "Jen", "Jacob"];
+      // document.write( _.uniq(names) + "<br>");
 
 
     </script>
