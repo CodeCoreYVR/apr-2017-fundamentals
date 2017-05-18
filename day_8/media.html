@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Media Queries</title>
+    <style>
+      /* viewport */
+      /* 2 type of measurement: absolute and relative */
+      h1 {
+        background-color: purple;
+        color: gold;
+        /*width: 200px;  */ /* absolute */
+        /*width: 100%; */  /* relative */
+        /*font-size: 5em; /* emphrical unit - multiple of the current standard */
+
+        /* em, vw, vh, vmax, vmin */
+        width: 100vh;
+        /*border: thin red solid;*/
+        /*box-sizing: border-box;*/
+      }
+
+      /*RESPONSIVE DESIGN*/
+      /*@font-face*/
+      /* media query */
+      body {
+        background-color: teal;
+      }
+      a {
+        text-decoration: none;
+        color: teal;
+        font-size: 20px;
+        font-family: Helvetica;
+      }
+
+      /* desktop */
+      @media (min-width: 1280px) {
+        body {
+          background-color: red;
+        }
+        ul {
+          /* ??? */
+        }
+        li {
+          /* ??? */
+          /*display: block;*/
+          display: inline;
+          background-color: beige;
+          border-radius: 5px;
+          padding: 10px;
+
+          /*float: left;
+          list-style: none;
+          margin-right: 10px;*/
+        }
+      }
+
+       /* tablet */
+      @media (max-width: 1024px) {
+        body {
+          background-color: orange;
+        }
+        li {
+          display: inline;
+          background-color: beige;
+          border-radius: 5px;
+          padding: 10px;
+        }
+      }
+
+      /* phone */
+      @media (max-width: 750px) {
+        body {
+          background-color: yellow;
+        }
+        li {
+          display: block;
+          background-color: beige;
+          border-radius: 5px;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+
+
+
+
+<!--  -->
