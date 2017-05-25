@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CodeCore Services</title>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <style>
+      /*li {
+        display: inline;
+        margin-right: 20px;
+      }*/
+      /*nav {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+      }*/
+      body {
+        padding-top: 50px;
+      }
+      .section {
+        padding-top: 50px;
+        color: white;
+        height: 500px;
+      }
+      #home {
+        background-color: purple;
+      }
+      #about {
+        background-color: blue;
+      }
+      #portfolio {
+        background-color: orange;
+      }
+      #contact {
+        background-color: red;
+      }
+      /* screen caliper - cmd + ctrl + shift + 4 */
+    </style>
+    <!-- <script>
+      $(document).ready(function(){
+        $('body[data-spy=scroll]');
+      });
+    </script> -->
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">CodeCore Services</a>
+        </div>
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="home" class="container-fluid section">
+      <h1>Home</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="about" class="container-fluid section">
+      <h1>About</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="portfolio" class="container-fluid section">
+      <h1>Portfolio</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="contact" class="container-fluid section">
+      <h1>Contact</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <!-- jumbotron -->
+    <!-- <div class="container-fluid"> -->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>CodeCore Services</h1>
+        <p>We Make Beautiful Sites</p>
+      </div>
+      <p>This is some text.</p>
+      <p>This is another text.</p>
+    </div>
+
+    <!-- grid systems -->
+    <div class="container-fluid">
+      <h2>Services We Offer</h2>
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color: pink">
+          <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+          <!-- <span class="glyphicon glyphicon-search" aria-hidden="true"></span> -->
+          <!-- <span class="glyphicon glyphicon-search" aria-hidden="true" style="font-size: 50px; color: green;"></span> -->
+          <h3>Coding</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color: yellow">
+          <span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span>
+          <h3>Design</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color: lightblue">
+          <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+          <h3>Marketing</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color: lightgreen">
+          <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+          <h3>DevOps</h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="background-color: teal">
+          <span class="glyphicon glyphicon-king" aria-hidden="true"></span>
+          <h3>Bake Cupcakes</h3>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size: 50px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAik0ueCd0SB7Vz06KU5RjQm1cwM3f1oOo",
+    authDomain: "day-9-example.firebaseapp.com",
+    databaseURL: "https://day-9-example.firebaseio.com",
+    projectId: "day-9-example",
+    storageBucket: "day-9-example.appspot.com",
+    messagingSenderId: "936288640081"
+  };
+  firebase.initializeApp(config);
+</script>
